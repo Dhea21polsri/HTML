@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apotik Sehat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #28a745;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background: #343a40;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #28a745;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content h2 {
+            color: #28a745;
+        }
+        footer {
+            background: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #28a745;
+            color: #fff;
+        }
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        form fieldset {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form select, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form input[type="checkbox"], form input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        form button {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #218838;
+        }
+        .promo, .recommended {
+            margin: 20px 0;
+        }
+        .promo h2, .recommended h2 {
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+        .promo .product, .recommended .product {
+            display: inline-block;
+            width: 30%;
+            margin-right: 1.5%;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .promo .product:last-child, .recommended .product:last-child {
+            margin-right: 0;
+        }
+        .promo .product img, .recommended .product img {
+            width: 150px;
+            height: 150px;
+        }
+        .promo .product p, .recommended .product p {
+            margin: 10px 0;
+        }
+        .promo .product .price {
+            color: green;
+            font-weight: bold;
+        }
+        .promo .product .old-price {
+            text-decoration: line-through;
+            color: red;
+        }
+        .recommended .product .view-all {
+            display: block;
+            margin-top: 10px;
+            background: #28a745;
+            color: #fff;
+            padding: 5px 0;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .recommended .product .view-all:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Apotik Sehat</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        
+    </nav>
+    <div class="container">
+        <div class="content">
+            <!-- 4. Penggunaan HTML Elements -->
+            <h2>Selamat Datang di Apotik Sehat</h2>
+            <p><i>Apotik terbaik dengan pelayanan yang prima</i></p>
+            <p><b><i>Selalu mengutamakan kesehatan Anda</i></b></p>
+            <p>Kami menyediakan berbagai macam <sup>obat</sup> dan <sub>peralatan medis</sub> untuk keperluan Anda.</p>
+            <address>
+                Jl. Kesehatan No. 10, Jakarta<br>
+                Telp: (021) 12345678<br>
+                Email: <a href="mailto:info@apotiksehat.com">info@apotiksehat.com</a>
+            </address>
+            <p>Dokter Utama: <abbr title="Dokter">Dr. Dhea</abbr></p>
+            <!-- 6. Link -->
+            <p><a href="https://www.k24klik.com/">website resmi Apotik</a></p>
+
+            <!-- Promo Section -->
+            <div class="promo">
+                <h2>Promo</h2>
+                <div class="product">
+                    <img src="https://kanozon.com/cdn/shop/products/Fiesta-Intim-Warm-Gel-Smooth-Strawberry-Flavoured-Lubricant_800x.jpg?v=1655475277" alt="Fiesta Intim Warm Gel 70ML">
+                    <p>Fiesta Intim Warm Gel 70ML</p>
+                    <p class="old-price">Rp 54.878</p>
+                    <p class="price">Rp 46.878,- / Tube</p>
+                </div>
+                <div class="product">
+                    <img src="https://mommiesdaily.com/wp-content/uploads/2021/05/stimuno-410x410.jpg" alt="Stimuno Sirup Original 60ML">
+                    <p>Stimuno Sirup Original 60ML</p>
+                    <p class="old-price">Rp 30.972</p>
+                    <p class="price">Rp 27.472,- / Botol</p>
+                </div>
+                <div class="product">
+                    <img src="https://s2.bukalapak.com/img/7159480352/large/_Stimuno_Syrup_60ml_Orange_Berry_Jeruk_Beri_60_ml_Daya_Tahan.jpg" alt="Stimuno Orange Berry Sirup 60ML">
+                    <p>Stimuno Orange Berry Sirup 60ML</p>
+                    <p class="old-price">Rp 30.972</p>
+                    <p class="price">Rp 27.472,- / Botol</p>
+                </div>
+            </div>
+
+            <!-- Recommended Section -->
+            <div class="recommended">
+                <h2>Produk Rekomendasi</h2>
+                <div class="product">
+                    <img src="https://th.bing.com/th/id/OIP.hDpftVbS_fhEJiHOrIQ9mgHaHa?rs=1&pid=ImgDetMain" alt="Vitamin C">
+                    <p>Vitamin C</p>
+                    
+                </div>
+                <div class="product">
+                    <img src="https://th.bing.com/th/id/OIP.4-BjA_5Ft5nE5C4lzycRqwAAAA?rs=1&pid=ImgDetMain" alt="Rheumacyl neuro">
+                    <p>Rheumacyl neuro</p>
+                
+                </div>
+            </div>
+
+            <!-- 9. Tabel -->
+            <h2>Daftar Harga</h2>
+            <table>
+                <caption>Daftar Harga Produk</caption>
+                <tr>
+                    <th>Produk</th>
+                    <th>Harga</th>
+                    <th>Keterangan</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Paracetamol</td>
+                    <td>Rp 5.000</td>
+                    <td>10 tablet</td>
+                </tr>
+                <tr>
+                    <td>Rp 45.000</td>
+                    <td>100 tablet</td>
+                </tr>
+                <tr>
+                    <td>Ibuprofen</td>
+                    <td colspan="2">Rp 10.000</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Amoxicillin</td>
+                    <td>Rp 15.000</td>
+                    <td>10 kapsul</td>
+                </tr>
+                <tr>
+                    <td>Rp 130.000</td
+
+>
+                    <td>100 kapsul</td>
+                </tr>
+                <tr>
+                    <td>Vitamin C</td>
+                    <td colspan="2">Rp 20.000</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Loratadine</td>
+                    <td>Rp 12.000</td>
+                    <td>10 tablet</td>
+                </tr>
+                <tr>
+                    <td>Rp 110.000</td>
+                    <td>100 tablet</td>
+                </tr>
+                <tr>
+                    <td>Aspirin</td>
+                    <td colspan="2">Rp 25.000</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Cetirizine</td>
+                    <td>Rp 18.000</td>
+                    <td>10 tablet</td>
+                </tr>
+                <tr>
+                    <td>Rp 160.000</td>
+                    <td>100 tablet</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 11. Form -->
+        <div class="content">
+            <h2>Form Pemesanan</h2>
+            <form action="submit_order.html" method="post">
+                <fieldset>
+                    <legend>Informasi Pribadi</legend>
+                    <label for="name">Nama:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Pesanan</legend>
+                    <label for="product">Produk:</label><br>
+                    <select id="product" name="product">
+                        <option value="paracetamol">Paracetamol</option>
+                        <option value="ibuprofen">Ibuprofen</option>
+                        <option value="amoxicillin">Amoxicillin</option>
+                        <option value="vitamin_c">Vitamin C</option>
+                        <option value="loratadine">Loratadine</option>
+                        <option value="aspirin">Aspirin</option>
+                        <option value="cetirizine">Cetirizine</option>
+                    </select><br>
+                    <label for="quantity">Jumlah:</label><br>
+                    <input type="number" id="quantity" name="quantity" min="1"><br>
+                    <input type="checkbox" id="express" name="express">
+                    <label for="express">Pengiriman Ekspres</label><br>
+                    <input type="radio" id="pay_credit" name="payment" value="credit">
+                    <label for="pay_credit">Kartu Kredit</label><br>
+                    <input type="radio" id="pay_cash" name="payment" value="cash">
+                    <label for="pay_cash">Cash</label><br>
+                </fieldset>
+                <button type="submit">Pesan</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Apotik Sehat. All rights reserved.</p>
+    </footer>
+</body>
+</html>
